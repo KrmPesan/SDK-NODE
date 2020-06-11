@@ -1,0 +1,28 @@
+{
+  "name": "@krmpesan/sdk",
+  "version": "1.0.0",
+  "description": "kirim pesan sdk node",
+  "main": "dist/Client.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrmPesan/SDK-NODE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KrmPesan/SDK-NODE/issues"
+  },
+  "homepage": "https://github.com/KrmPesan/SDK-NODE/#readme",
+  "author": "KrmPesan <support@krmpesan.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "ts": "rm -rf ./dist && tsc",
+    "tsc": "rm -rf ./dist && tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
