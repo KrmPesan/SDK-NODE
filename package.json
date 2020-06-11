@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "kirim pesan sdk node",
   "main": "dist/Client.js",
+  "typings": "dist/Client.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KrmPesan/SDK-NODE.git"
