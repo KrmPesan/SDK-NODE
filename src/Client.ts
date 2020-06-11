@@ -46,7 +46,7 @@ export class Client {
         this.customHeader = headers;
     }
 
-    action<T>(type: AxiosRequestConfig['method'], url: string, form?: Object): Promise<T> {
+    action(type: AxiosRequestConfig['method'], url: string, form?: Object) : Promise<AxiosResponse> {
         // Setup Url
         const buildUrl: string = this.apiUrl + '/' + url;
         
@@ -77,7 +77,7 @@ export class Client {
     /**
      * Device Information.
      */
-    deviceInfo() {
+    deviceInfo() : Promise<AxiosResponse> {
         return this.action('GET', 'api/v2/device');
     }
 }
